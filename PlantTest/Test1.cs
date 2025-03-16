@@ -412,6 +412,24 @@ namespace PlantsTest
     public class RoseTests
     {
         [TestMethod]
+        public void Constructor_WithParameters_SetsPropertiesCorrectly()
+        {
+            // Проверяем, что конструктор с параметрами корректно устанавливает свойства
+            Rose rose = new Rose("Red Rose", "Red", "Fragrant", true, 789);
+
+            Assert.AreEqual("Red Rose", rose.Name);
+        }
+
+        [TestMethod]
+        public void Constructor_WithoutParameters_SetsDefaultValues()
+        {
+            // Проверяем, что конструктор без параметров задаёт значения по умолчанию
+            Rose rose = new Rose();
+
+            Assert.AreEqual("", rose.Name);
+        }
+
+        [TestMethod]
         public void Clone_ReturnsEqualObject()
         {
             // Проверяем, что клонированная роза идентична оригиналу
@@ -429,6 +447,17 @@ namespace PlantsTest
             Rose clonedRose = (Rose)originalRose.Clone();
 
             Assert.AreNotSame(originalRose, clonedRose);
+        }
+
+        [TestMethod]
+        public void Clone_DeepCopiesIdNumber()
+        {
+            // Проверяем, что IdNumber клонируется глубоко
+            Rose originalRose = new Rose("Red Rose", "Red", "Fragrant", true, 789);
+            Rose clonedRose = (Rose)originalRose.Clone();
+            originalRose.Id.Number = 999;
+
+            Assert.AreEqual(789, clonedRose.Id.Number);
         }
 
         [TestMethod]
@@ -452,6 +481,26 @@ namespace PlantsTest
         }
 
         [TestMethod]
+        public void Equals_WithDifferentSmell_ReturnsFalse()
+        {
+            // Проверяем, что розы с разным запахом не равны
+            Rose rose1 = new Rose("Red Rose", "Red", "Fragrant", true, 789);
+            Rose rose2 = new Rose("Red Rose", "Red", "Sweet", true, 789);
+
+            Assert.IsFalse(rose1.Equals(rose2));
+        }
+
+        [TestMethod]
+        public void HasThornsSetter_SetsTrueCorrectly()
+        {
+            // Проверяем, что установка HasThorns в true работает корректно
+            Rose rose = new Rose("Red Rose", "Red", "Fragrant", false, 789);
+            rose.HasThorns = true;
+
+            Assert.IsTrue(rose.HasThorns);
+        }
+
+        [TestMethod]
         public void RandomInit_SetsValidThorns()
         {
             // Проверяем, что случайная инициализация задаёт корректное значение шипов
@@ -459,6 +508,16 @@ namespace PlantsTest
             rose.RandomInit();
 
             Assert.IsTrue(rose.HasThorns == true || rose.HasThorns == false);
+        }
+
+        [TestMethod]
+        public void RandomInit_SetsNonEmptySmell()
+        {
+            // Проверяем, что случайная инициализация задаёт непустой запах
+            Rose rose = new Rose();
+            rose.RandomInit();
+
+            Assert.IsFalse(string.IsNullOrEmpty(rose.Smell));
         }
 
         [TestMethod]
@@ -475,12 +534,51 @@ namespace PlantsTest
         }
 
         [TestMethod]
+        public void Init_SetsValidSmellFromInput()
+        {
+            // Проверяем, что Init корректно устанавливает запах из ввода
+            Rose rose = new Rose();
+            using (var input = new StringReader("Rose\nRed\nSweet\n0\n"))
+            {
+                Console.SetIn(input);
+                rose.Init();
+                Assert.AreEqual("Sweet", rose.Smell);
+            }
+        }
+
+        [TestMethod]
+        public void Init_SetsValidNameFromInput()
+        {
+            // Проверяем, что Init корректно устанавливает имя из ввода
+            Rose rose = new Rose();
+            using (var input = new StringReader("Pink Rose\nPink\nSubtle\n0\n"))
+            {
+                Console.SetIn(input);
+                rose.Init();
+                Assert.AreEqual("Pink Rose", rose.Name);
+            }
+        }
+
+        [TestMethod]
         public void ToString_ReturnsBaseFormat()
         {
             // Проверяем, что ToString наследуется от Plant и возвращает правильный формат
             Rose rose = new Rose("Pink Rose", "Pink", "Subtle", false, 4);
 
             Assert.AreEqual("Plant: Name=Pink Rose, Color=Pink", rose.ToString());
+        }
+
+        [TestMethod]
+        public void Show_OutputsCorrectString()
+        {
+            // Проверяем, что Show выводит правильную строку в консоль
+            Rose rose = new Rose("Red Rose", "Red", "Fragrant", true, 789);
+            using (var output = new StringWriter())
+            {
+                Console.SetOut(output);
+                rose.Show();
+                Assert.AreEqual($"Plant: Name=Red Rose, Color=Red, Smell=Fragrant, HasThorns=True{Environment.NewLine}", output.ToString());
+            }
         }
     }
 
