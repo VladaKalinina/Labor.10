@@ -1,0 +1,11 @@
+C:\Users\kalin\source\repos\Plants\bin\Debug\net8.0\Plants.deps.json
+C:\Users\kalin\source\repos\Plants\bin\Debug\net8.0\Plants.dll
+C:\Users\kalin\source\repos\Plants\bin\Debug\net8.0\Plants.pdb
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.AssemblyInfoInputs.cache
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.AssemblyInfo.cs
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.csproj.CoreCompileInputs.cache
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.dll
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\refint\Plants.dll
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\Plants.pdb
+C:\Users\kalin\source\repos\Plants\obj\Debug\net8.0\ref\Plants.dll

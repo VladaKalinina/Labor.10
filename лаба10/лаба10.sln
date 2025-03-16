@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "лаба10", "лаба10.csproj", "{A3E019BB-8FD4-438E-8B63-34C6C274069A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plants", "..\Plants\Plants.csproj", "{73431ED6-EE10-4625-80C5-CBC18F556A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantTest", "..\PlantTest\PlantTest.csproj", "{30C4A460-21EA-46A3-9C79-E71D7C29D1D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3E019BB-8FD4-438E-8B63-34C6C274069A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E019BB-8FD4-438E-8B63-34C6C274069A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E019BB-8FD4-438E-8B63-34C6C274069A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E019BB-8FD4-438E-8B63-34C6C274069A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73431ED6-EE10-4625-80C5-CBC18F556A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73431ED6-EE10-4625-80C5-CBC18F556A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73431ED6-EE10-4625-80C5-CBC18F556A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73431ED6-EE10-4625-80C5-CBC18F556A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30C4A460-21EA-46A3-9C79-E71D7C29D1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30C4A460-21EA-46A3-9C79-E71D7C29D1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30C4A460-21EA-46A3-9C79-E71D7C29D1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30C4A460-21EA-46A3-9C79-E71D7C29D1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AE11FA7-E362-45E4-8BE5-225FE0709A41}
+	EndGlobalSection
+EndGlobal

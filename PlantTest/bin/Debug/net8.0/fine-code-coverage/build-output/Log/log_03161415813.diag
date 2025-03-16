@@ -1,0 +1,16 @@
+2025-03-16T14:04:15.8214822+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Version: 1.4.3+c252b64ad913ea9411fc5d17bfd5580d2d061497
+2025-03-16T14:04:15.8494991+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging mode: asynchronous
+2025-03-16T14:04:15.8512094+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Logging level: Information
+2025-03-16T14:04:15.8512163+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION CreateBuilderAsync entry time: 14:04:15.772
+2025-03-16T14:04:15.8564163+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION PID: 2800
+2025-03-16T14:04:15.8566394+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime information: win-x64 - .NET 8.0.13
+2025-03-16T14:04:15.8566535+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Runtime location: C:\Program Files\dotnet\shared\Microsoft.NETCore.App\8.0.13\System.Private.CoreLib.dll
+2025-03-16T14:04:15.8566615+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION IsDynamicCodeSupported: True
+2025-03-16T14:04:15.8566646+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Test module: C:\Users\kalin\source\repos\PlantTest\bin\Debug\net8.0\PlantTest.dll
+2025-03-16T14:04:15.8570822+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION Command line arguments: '--server --diagnostic --diagnostic-verbosity Information --diagnostic-output-directory C:\Users\kalin\source\repos\PlantTest\bin\Debug\net8.0\Log --results-directory C:\Users\kalin\source\repos\лаба10\TestResults --client-port 65148'
+2025-03-16T14:04:15.8590724+00:00 Microsoft.Testing.Platform.Builder.TestApplication INFORMATION TESTINGPLATFORM_DEFAULT_HANG_TIMEOUT: ''
+2025-03-16T14:04:15.8999038+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting RegisterEnvironmentVariablesConfigurationSource: 'True'
+2025-03-16T14:04:15.9049481+00:00 Microsoft.Testing.Platform.Configurations.JsonConfigurationSource+JsonConfigurationProvider INFORMATION Config file 'C:\Users\kalin\source\repos\PlantTest\bin\Debug\net8.0\PlantTest.testconfig.json' not found.
+2025-03-16T14:04:15.9069067+00:00 Microsoft.Testing.Platform.Hosts.TestHostBuilder INFORMATION Setting PlatformExitProcessOnUnhandledException: 'False', config file: False environment variable:  VSTest mode: False
+2025-03-16T14:04:16.1223989+00:00 Microsoft.Testing.Platform.Requests.TestHostTestFrameworkInvoker INFORMATION Test framework UID: 'MSTestExtension' Version: '3.6.4' DisplayName: 'MSTest' Description: 'MSTest Framework for Microsoft Testing Platform'
+2025-03-16T14:04:16.2596009+00:00 Microsoft.Testing.Extensions.VSTestBridge.ObjectModel.MessageLoggerAdapter INFORMATION Включена параллелизация тестов для C:\Users\kalin\source\repos\PlantTest\bin\Debug\net8.0\PlantTest.dll (рабочие роли: 4, область: MethodLevel)
